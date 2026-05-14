@@ -119,6 +119,7 @@ if (form) {
 
     const params = new URLSearchParams({
       name:      nameVal,
+      email:     form.elements['email'].value.trim(),
       attending: attending.value,
       allergies: form.elements['allergies'].value.trim(),
       message:   form.elements['message'].value.trim(),

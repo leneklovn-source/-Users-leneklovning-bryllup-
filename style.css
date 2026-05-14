@@ -294,6 +294,18 @@ body {
 
 .section-title.light { color: var(--white); }
 
+.program-note {
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--navy);
+  opacity: 0.65;
+  letter-spacing: 0.04em;
+}
+
 .program-grid {
   display: flex;
   align-items: center;
@@ -638,9 +650,12 @@ body {
 }
 
 .form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group select,
 .form-group textarea {
   width: 100%;
+  box-sizing: border-box;
   padding: 14px 16px;
   border: 1px solid rgba(26, 58, 92, 0.25);
   background: var(--white);
